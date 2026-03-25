@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
         musicWidget.addEventListener('click', (e) => {
             if (Math.abs(e.clientX - startX) < 5 && Math.abs(e.clientY - startY) < 5) {
-                window.open('https://www.youtube.com/watch?v=L7Hh8QxRpWY', '_blank');
+                window.open('https://www.youtube.com/watch?v=Ajxn0PKbv7I', '_blank');
             }
         });
     }
