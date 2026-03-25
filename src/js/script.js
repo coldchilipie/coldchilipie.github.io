@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
             let totalStars = 0;
 
             while (true) {
-                const response = await fetch(`https://api.github.com/users/Extravi/repos?per_page=100&page=${page}`);
+                const response = await fetch(`https://api.github.com/users/coldchilipie/repos?per_page=100&page=${page}`);
                 if (!response.ok) break;
 
                 const data = await response.json();
@@ -409,7 +409,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         async function getRepoDownloads(repoName) {
             try {
-                const response = await fetch(`https://api.github.com/repos/Extravi/${repoName}/releases`);
+                const response = await fetch(`https://api.github.com/repos/coldchilipie/${repoName}/releases`);
                 if (!response.ok) return 0;
                 const releases = await response.json();
                 return releases.reduce((acc, release) => acc + release.assets.reduce((sum, asset) => sum + asset.download_count, 0), 0);
@@ -541,7 +541,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (statusEl) statusEl.textContent = "Fetching from GitHub...";
 
             while (true) {
-                const response = await fetch(`https://api.github.com/users/Extravi/repos?per_page=100&page=${page}`);
+                const response = await fetch(`https://api.github.com/users/coldchilipie/repos?per_page=100&page=${page}`);
                 if (!response.ok) break;
 
                 const data = await response.json();
