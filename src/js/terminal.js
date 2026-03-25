@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         'website.html': { type: 'file', content: 'You are looking at it!' }
                     }
                 },
-                'contact': { type: 'file', content: 'dante@extravi.dev' }
+                'contact': { type: 'file', content: 'Senoe@coldchiliepie.github.io' }
             }
         }
     };
@@ -188,7 +188,7 @@ Available commands:
     }
 
     function getPrompt() {
-        return `dante@extravi.dev:${getCurrentPathString()}$`;
+        return `Senoe@coldchiliepie.github.io:${getCurrentPathString()}$`;
     }
 
     function getCurrentPathString() {
